@@ -1,19 +1,28 @@
-import './button.css'
+import "./Button.css";
+import React from "react";
 
 interface ButtonProps {
-    text: string;
-    buttonId: string;
-    buttonType: string;
+  text: string;
+  buttonId: string;
+  buttonType: string;
+  onClick: (arg: string) => void;
 }
 
-function Button({ text, buttonId, buttonType }: ButtonProps) {
-    return (
-        <div>
-            <button id={buttonId} className={`calculatorButton ${buttonType}`}>
-                <p>{text}</p>
-            </button>
-        </div>
-    )
-}
+const Button: React.FC<ButtonProps> = ({
+  text,
+  buttonId,
+  buttonType,
+  onClick,
+}) => {
+  return (
+    <button
+      id={buttonId}
+      className={`calculatorButton ${buttonType}`}
+      onClick={() => onClick(text)}
+    >
+      {text}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

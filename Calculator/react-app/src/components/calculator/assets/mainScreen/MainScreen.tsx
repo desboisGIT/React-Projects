@@ -1,18 +1,19 @@
-import './mainScreen.css'
+import "./mainScreen.css";
 
 interface mainScreenProps {
-    text: string;
+  text: string;
 }
 
 function MainScreen({ text }: mainScreenProps) {
-    return (
-        <>
-            <div className='MainScreen'>
-                <p>{text}</p>
-            </div>
-
-        </>
-    )
+  return (
+    <>
+      <div className="MainScreen">
+        <p>
+          <strong>{text}</strong>
+        </p>
+      </div>
+    </>
+  );
 }
 
-export default MainScreen
+export default MainScreen;
