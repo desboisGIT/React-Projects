@@ -1,0 +1,10 @@
+html {
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+    background-image: radial-gradient(75% 75% at 31% 41%, #FF780061 0%, #F5A01900 81%),radial-gradient(75% 75% at 95% 14%, #FFF00061 11%, #F5A01900 81%),radial-gradient(75% 75% at 79% 86%, #FF780061 20%, #F5A01900 81%),radial-gradient(75% 75% at 50% 50%, #222222FF 0%, #222222FF 100%);
+    background-repeat: no-repeat;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

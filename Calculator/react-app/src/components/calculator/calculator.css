@@ -1,0 +1,24 @@
+.calculatorContainer {
+    background-color: rgba(238, 238, 238, 0.51);
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(75% 75% at 31% 41%, #FF780061 0%, #F5A01900 81%), radial-gradient(75% 75% at 95% 14%, #FFF00061 11%, #F5A01900 81%), radial-gradient(75% 75% at 79% 86%, #FF780061 20%, #F5A01900 81%), radial-gradient(75% 75% at 50% 50%, #22222200 0%, #22222200 100%);
+
+    width: fit-content;
+    height: fit-content;
+
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+.calculatorButtonsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+
+    width: fit-content;
+    height: fit-content;
+}
