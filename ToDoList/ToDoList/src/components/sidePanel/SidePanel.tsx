@@ -1,21 +1,17 @@
 import './SidePanel.css';
 
-interface Section {
-    category: string;
-}
-
-interface SidePanelProps {
-    sections: Array<Section>;
-}
-
-function SidePanel({ sections }: SidePanelProps) {
+function SidePanel() {
     return (
-        <div className="side-panel">
-            {sections.map((section, index) => (
-                <div key={index} className="section">
-                    <h3 className="category">{section.category}</h3>
-                </div>
-            ))}
+        <div className="sidePanel">
+            <h3 className="category">
+                <i className="fas fa-tachometer-alt"></i> Dashboard
+            </h3>
+            <h3 className="category">
+                <i className="fas fa-tasks"></i> Tasks
+            </h3>
+            <h3 className="category">
+                <i className="fas fa-calendar-day"></i> Diary
+            </h3>
         </div>
     );
 }
