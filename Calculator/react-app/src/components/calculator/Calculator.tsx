@@ -14,7 +14,7 @@ const evaluateExpression = (expr: string): string => {
 };
 
 const Calculator = () => {
-  const [expression, setExpression] = useState<string>("0");
+  const [expression, setExpression] = useState<string>("");
   const [previousExpression, setPreviousExpression] = useState<string>("");
   const [eraseTextStatus, setEraseStatus] = useState<string>("C");
   const handleButtonClick = (text: string) => {
@@ -25,8 +25,8 @@ const Calculator = () => {
       setExpression(result);
     } else if (text === "C" || text === "CE") {
       setEraseStatus("CE");
-      setExpression("0");
-      if (expression === "0") {
+      setExpression("");
+      if (expression === "") {
         setPreviousExpression("");
       }
     } else if (text === "+" || text === "-" || text === "x" || text === "/") {
